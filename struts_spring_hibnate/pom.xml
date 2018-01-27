@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>moban</artifactId>
+        <groupId>spring_stuts_hibnate</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>struts_spring_hibnate</artifactId>
+    <packaging>war</packaging>
+    <name>struts_spring_hibnate Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+    <dependencies>
+        <!--maven会自动生成junit测试类，不过建议这个类跟父类的junit版本一致，否则会有可能无法使用@Test!-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>struts_spring_hibernate</finalName>
+    </build>
+</project>

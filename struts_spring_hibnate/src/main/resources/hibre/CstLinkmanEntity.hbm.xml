@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="bean.CstLinkmanEntity" table="cst_linkman" schema="cao">
+        <id name="lkmId" column="lkm_id"/>
+        <property name="lkmName" column="lkm_name"/>
+        <property name="lkmGender" column="lkm_gender"/>
+        <property name="lkmPhone" column="lkm_phone"/>
+        <property name="lkmMobile" column="lkm_mobile"/>
+        <property name="lkmEmail" column="lkm_email"/>
+        <property name="lkmQq" column="lkm_qq"/>
+        <property name="lkmPosition" column="lkm_position"/>
+        <property name="lkmMemo" column="lkm_memo"/>
+        <property name="index" column="index_"/>
+        <many-to-one name="cstCustomerByLkmCustId" class="bean.CstCustomerEntity">
+            <column name="lkm_cust_id" not-null="true"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>
